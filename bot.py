@@ -27,7 +27,7 @@ def main():
     app.add_handler(CommandHandler("help", help_command))
 
     print("✅ Solix Bot is running...")
-    app.run_polling()
+    app.run_polling(close_loop=False)
 
 
 if __name__ == "__main__":
